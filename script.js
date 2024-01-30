@@ -1,14 +1,14 @@
 "use strict";
 
-const examplePlant = {
-  name: "Orchid",
-  species: "Flower",
-  schedule: 2,
-};
+// const examplePlant = {
+//   name: "Orchid",
+//   species: "Flower",
+//   schedule: 2,
+// };
 
 const plants = [];
 
-plants.push(examplePlant);
+// plants.push(examplePlant);
 console.log(plants);
 
 function displayPlants() {
