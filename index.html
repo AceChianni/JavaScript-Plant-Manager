@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Plant Management System</h1>
+
+    <!-- Adding a new plant -->
+    <form id="plant-form">
+      <div class="form-group">
+        <label for="plantName">
+          Plant Name:
+          <input
+            type="text"
+            id="plantName"
+            name="plantName"
+            placeholder="Enter plant name"
+            aria-placeholder="Enter plant name"
+          />
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="species">
+          Plant Species:
+          <input
+            type="text"
+            id="species"
+            name="species"
+            placeholder="Enter plant species"
+            aria-placeholder="Enter plant species"
+          />
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="schedule">
+          Water Schedule:
+          <input
+            type="text"
+            id="schedule"
+            name="schedule"
+            placeholder="Enter watering schedule"
+            aria-placeholder="Enter watering schedule"
+          />
+        </label>
+      </div>
+
+      <button>Add Plant</button>
+    </form>
+
+    <h3>Current Plants</h3>
+    <!-- List of plants -->
+    <ul id="plantList"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
