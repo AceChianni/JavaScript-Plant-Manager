@@ -9,7 +9,7 @@
 const plants = [];
 
 // plants.push(examplePlant);
-console.log(plants);
+// console.log(plants);
 
 function displayPlants() {
   const plantList = document.getElementById("plantList");
