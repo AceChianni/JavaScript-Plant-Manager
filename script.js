@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const plantSpecies = document.getElementById("plantSpecies").value;
     const waterSchedule = document.getElementById("waterSchedule").value;
 
+    // Validate input
+    if (!plantName || !plantSpecies || !waterSchedule) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
     // Create a new plant object
     const newPlant = {
       name: plantName,

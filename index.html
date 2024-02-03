@@ -3,36 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plant Tracker</title>
+    <title>Loose Leaf</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Plant Tracker</h1>
+    <h1>Loose Leaf</h1>
+    <h2>Plant Manager</h2>
 
     <form id="plantForm">
       <label for="plantName">Plant Name:</label>
       <input type="text" id="plantName" name="plantName" required />
+      <span class="error" id="plantNameError"></span>
       <br />
 
       <label for="plantSpecies">Plant Species:</label>
       <input type="text" id="plantSpecies" name="plantSpecies" required />
+      <span class="error" id="plantSpeciesError"></span>
       <br />
 
       <label for="waterSchedule">Water Schedule:</label>
       <input type="text" id="waterSchedule" name="waterSchedule" required />
+      <span class="error" id="waterScheduleError"></span>
       <br />
 
       <input type="submit" value="Add Plant" />
     </form>
 
     <h2>Plants List</h2>
-    <ul id="plantsList">
-      <!-- Plant items will be added here dynamically -->
-    </ul>
+    <ul id="plantsList"></ul>
 
     <button id="sortButton">Sort Plants</button>
-    <!-- <input type="text" id="filterInput" placeholder="Filter Plants"> -->
-
     <script src="script.js"></script>
   </body>
 </html>
