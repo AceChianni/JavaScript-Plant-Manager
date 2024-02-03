@@ -3,59 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plant Management System</title>
+    <title>Plant Tracker</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Plant Management System</h1>
+    <h1>Plant Tracker</h1>
 
-    <!-- Adding a new plant -->
-    <form id="plant-form">
-      <div class="form-group">
-        <label for="name">
-          Plant Name:
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter plant name"
-            aria-placeholder="Enter plant name"
-          />
-        </label>
-      </div>
+    <form id="plantForm">
+      <label for="plantName">Plant Name:</label>
+      <input type="text" id="plantName" name="plantName" required />
+      <br />
 
-      <div class="form-group">
-        <label for="species">
-          Plant Species:
-          <input
-            type="text"
-            id="species"
-            name="species"
-            placeholder="Enter plant species"
-            aria-placeholder="Enter plant species"
-          />
-        </label>
-      </div>
+      <label for="plantSpecies">Plant Species:</label>
+      <input type="text" id="plantSpecies" name="plantSpecies" required />
+      <br />
 
-      <div class="form-group">
-        <label for="schedule">
-          Water Schedule:
-          <input
-            type="text"
-            id="schedule"
-            name="schedule"
-            placeholder="Enter watering schedule"
-            aria-placeholder="Enter watering schedule"
-          />
-        </label>
-      </div>
+      <label for="waterSchedule">Water Schedule:</label>
+      <input type="text" id="waterSchedule" name="waterSchedule" required />
+      <br />
 
-      <button>Add Plant</button>
+      <input type="submit" value="Add Plant" />
     </form>
 
-    <h3>Current Plants</h3>
-    <!-- List of plants -->
-    <ul id="plantList"></ul>
+    <h2>Plants List</h2>
+    <ul id="plantsList">
+      <!-- Plant items will be added here dynamically -->
+    </ul>
+
+    <button id="sortButton">Sort Plants</button>
+    <!-- <input type="text" id="filterInput" placeholder="Filter Plants"> -->
 
     <script src="script.js"></script>
   </body>
